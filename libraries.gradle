@@ -1,0 +1,26 @@
+ext {
+    libs = libsMap(
+            jaxen: 'jaxen:jaxen:1.1.6',
+            jdom: 'jdom:jdom:1.1',
+            test: [
+                    junit: 'junit:junit:4.11',
+                    assertj: 'org.assertj:assertj-core:1.7.1'
+            ]
+    )
+}
+
+def libsMap(Map<String, ?> map) {
+    def processMap
+    processMap = { innerMap ->
+        innerMap.each {
+            if (it.value instanceof Map) {
+                innerMap[it.key] = processMap(it.value)
+            }
+        }
+        innerMap.asImmutable().withDefault {
+            throw new InvalidUserDataException(
+                    "No entry '$it' in dependency map (candidates: ${innerMap.keySet().sort().join(", ")})" )
+        }
+    }
+    processMap(map)
+}
