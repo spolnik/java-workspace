@@ -1,7 +1,4 @@
 dependencies {
     compile libs.jaxen,
             libs.jdom
-
-    testCompile libs.test.junit,
-                libs.test.assertj
 }

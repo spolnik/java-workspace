@@ -1,0 +1,5 @@
+dependencies {
+    compile libs.slf4j_api,
+            libs.log4j,
+            libs.slf4j_log4j12
+}

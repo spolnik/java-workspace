@@ -2,3 +2,5 @@ rootProject.name = 'java-workspace'
 
 include 'jaxen-workspace'
 
+include 'slf4j-workspace'
+
