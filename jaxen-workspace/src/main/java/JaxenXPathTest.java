@@ -3,11 +3,15 @@ import org.jaxen.jdom.JDOMXPath;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.input.SAXBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.List;
 
 public class JaxenXPathTest {
+
+    private static Logger log = LoggerFactory.getLogger(JaxenXPathTest.class);
 
     public static void main(String[] args) {
 
@@ -23,7 +27,7 @@ public class JaxenXPathTest {
             List<Element> results = path.selectNodes(dom4jDocument);
 
             results.forEach(
-                    element -> System.out.println(element.getText())
+                    element -> log.info(element.getText())
             );
         } catch (Exception e) {
             e.printStackTrace();

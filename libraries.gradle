@@ -5,6 +5,7 @@ ext {
             slf4j_api: 'org.slf4j:slf4j-api:1.7.10',
             log4j: 'log4j:log4j:1.2.17',
             slf4j_log4j12: 'org.slf4j:slf4j-log4j12:1.7.10',
+            xstream: 'com.thoughtworks.xstream:xstream:1.4.8',
             test: [
                     junit: 'junit:junit:4.11',
                     assertj: 'org.assertj:assertj-core:1.7.1'

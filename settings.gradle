@@ -4,3 +4,5 @@ include 'jaxen-workspace'
 
 include 'slf4j-workspace'
 
+include 'xstream-workspace'
+
