@@ -18,6 +18,7 @@ ext {
                 context: 'org.springframework:spring-context',
                 jms: 'org.springframework:spring-jms',
                 jdbc: 'org.springframework:spring-jdbc',
+                tx: 'org.springframework:spring-tx',
                 web: 'org.springframework:spring-web'
             ],
             test: [
