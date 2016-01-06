@@ -15,7 +15,5 @@ jar {
 }
 
 dependencies {
-    compile libs.spring.boot,
-            libs.spring.context,
-            libs.guava
+    compile libs.spring.boot
 }
