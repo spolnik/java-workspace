@@ -9,4 +9,5 @@ include 'scheduling-tasks'
 include 'relational-data-access-spring'
 include 'batch-service-with-spring'
 include 'messaging-jms-with-spring'
+include 'asynchronous-methods-with-spring'
 
