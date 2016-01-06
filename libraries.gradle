@@ -10,10 +10,12 @@ ext {
             guava: 'com.google.guava:guava:19.0',
             h2: 'com.h2database:h2',
             hsqldb: 'org.hsqldb:hsqldb',
+            activemq: 'org.apache.activemq:activemq-broker',
             spring: [
                 boot: 'org.springframework.boot:spring-boot-starter',
                 batch: 'org.springframework.boot:spring-boot-starter-batch',
                 context: 'org.springframework:spring-context',
+                jms: 'org.springframework:spring-jms',
                 jdbc: 'org.springframework:spring-jdbc'
             ],
             test: [
