@@ -7,4 +7,5 @@ include 'slf4j-workspace'
 include 'xstream-workspace'
 
 include 'wife-swift-workspace'
+include 'caching-data-with-spring'
 
