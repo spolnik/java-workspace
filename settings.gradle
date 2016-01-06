@@ -8,4 +8,5 @@ include 'xstream-workspace'
 
 include 'wife-swift-workspace'
 include 'caching-data-with-spring'
+include 'scheduling-tasks'
 
