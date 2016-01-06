@@ -8,9 +8,11 @@ ext {
             xstream: 'com.thoughtworks.xstream:xstream:1.4.8',
             wife: 'com.prowidesoftware:pw-swift-core:SRU2014-7.6',
             guava: 'com.google.guava:guava:19.0',
+            h2: 'com.h2database:h2',
             spring: [
                 boot: 'org.springframework.boot:spring-boot-starter',
-                context: 'org.springframework:spring-context'
+                context: 'org.springframework:spring-context',
+                jdbc: 'org.springframework:spring-jdbc'
             ],
             test: [
                     junit: 'junit:junit:4.11',
