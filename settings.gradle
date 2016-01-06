@@ -1,13 +1,11 @@
 rootProject.name = 'java-workspace'
 
 include 'jaxen-workspace'
-
 include 'slf4j-workspace'
-
 include 'xstream-workspace'
-
 include 'wife-swift-workspace'
 include 'caching-data-with-spring'
 include 'scheduling-tasks'
 include 'relational-data-access-spring'
+include 'batch-service-with-spring'
 

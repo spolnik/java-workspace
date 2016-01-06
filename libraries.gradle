@@ -9,8 +9,10 @@ ext {
             wife: 'com.prowidesoftware:pw-swift-core:SRU2014-7.6',
             guava: 'com.google.guava:guava:19.0',
             h2: 'com.h2database:h2',
+            hsqldb: 'org.hsqldb:hsqldb',
             spring: [
                 boot: 'org.springframework.boot:spring-boot-starter',
+                batch: 'org.springframework.boot:spring-boot-starter-batch',
                 context: 'org.springframework:spring-context',
                 jdbc: 'org.springframework:spring-jdbc'
             ],
