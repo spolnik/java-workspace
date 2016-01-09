@@ -12,6 +12,7 @@ ext {
             hsqldb: 'org.hsqldb:hsqldb',
             activemq: 'org.apache.activemq:activemq-broker',
             jackson: 'com.fasterxml.jackson.core:jackson-databind',
+            jasperreports: 'net.sf.jasperreports:jasperreports:6.2.0',
             spring: [
                 boot: 'org.springframework.boot:spring-boot-starter',
                 batch: 'org.springframework.boot:spring-boot-starter-batch',

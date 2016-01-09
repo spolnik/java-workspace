@@ -1,0 +1,4 @@
+dependencies {
+    compile libs.jasperreports,
+            libs.guava
+}

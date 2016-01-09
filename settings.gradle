@@ -11,4 +11,5 @@ include 'batch-service-with-spring'
 include 'messaging-jms-with-spring'
 include 'asynchronous-methods-with-spring'
 include 'managing-transactions-with-spring'
+include 'jasper-reports'
 
