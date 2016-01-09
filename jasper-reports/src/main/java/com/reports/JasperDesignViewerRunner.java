@@ -3,7 +3,6 @@ package com.reports;
 import com.google.common.io.Resources;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.view.JasperDesignViewer;
-import net.sf.jasperreports.view.JasperViewer;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,7 +17,6 @@ public class JasperDesignViewerRunner {
 
         String jasperFileName = viewTemplate(xmlReportTemplatePath);
         generatePdf(jasperFileName);
-        viewPrintFile(jasperFileName);
     }
 
     private static String viewTemplate(URL xmlReportTemplatePath) throws JRException {
@@ -28,12 +26,14 @@ public class JasperDesignViewerRunner {
     }
 
     private static void generatePdf(String jasperFileName) throws JRException, IOException {
-        byte[] data = JasperRunManager.runReportToPdf(jasperFileName, new HashMap<>(), new JREmptyDataSource());
+
+        byte[] data = JasperRunManager.runReportToPdf(jasperFileName, parameters(), new JREmptyDataSource());
         Files.write(Paths.get("FirstReport.pdf"), data);
     }
 
-    private static void viewPrintFile(String jasperFileName) throws JRException {
-        String printFileName = JasperFillManager.fillReportToFile(jasperFileName, new HashMap<>(), new JREmptyDataSource());
-        JasperViewer.main(new String[]{"-F", printFileName});
+    private static HashMap<String, Object> parameters() {
+        HashMap<String, Object> parameters = new HashMap<>();
+        parameters.put("paramName", "paramValue");
+        return parameters;
     }
 }
